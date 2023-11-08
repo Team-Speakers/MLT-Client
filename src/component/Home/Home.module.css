@@ -1,0 +1,129 @@
+/* Home.module.css */
+
+/* 컨테이너 스타일 */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    text-align: center;
+    flex-direction: row;
+    margin: 0 72px;
+    max-width: 1200px; /* 최대 너비 설정 */
+    margin: 0 auto; /* 가운데 정렬을 위한 margin 설정 */
+    
+  }
+
+.glue_grid {
+  margin-top: 100px;
+  display: grid;
+  grid-column-gap: 48px; /* 그리드 컬럼 사이의 간격 조절 */
+  grid-template-columns: repeat(12, minmax(60px, 1fr));
+}
+/* 각 컬럼의 스타일 설정 */
+.glue-grid__col {
+  display: block;
+  grid-column-end: span 6;
+}
+
+.glue-grid__col--span-8 {
+  grid-column: span 8;
+  }
+
+.glue-grid__col--span-4 {
+grid-column: span 4;
+}
+
+  
+  .input_field {
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 300px;
+  }
+  
+  .input_field input {
+    flex: 1;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 16px;
+    max-width: 200px;
+  }
+  
+  /* 버튼 스타일 */
+  .button {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 24px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    
+  }
+
+  .buttonS {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 24px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    width: 305px;
+  }
+  
+  .button:hover {
+    background-color: white;
+    color: gray;
+  }
+  .buttonS:hover {
+    background-color: white;
+    color: gray;
+  }
+  
+  /* 네비게이션 링크 목록 스타일 */
+  .link_list {
+    list-style: none;
+    padding: 0;
+    justify-content: space-between;
+  }
+  
+  .link_list li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .link_list a {
+    width: 214px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 44px;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s;
+    text-align: center;
+  }
+  
+  .link_list a:hover {
+    background-color: white;
+    color: white;
+  }
+  
+  .greetings {
+    font-size: 54px;
+    color: white;
+    margin-top: 20px;
+    text-align: left;
+    flex: 1;
+  }

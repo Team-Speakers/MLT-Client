@@ -1,6 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
-import React, {useEffect, useState} from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
+// import Footer from "./component/Footer/Footer";
+import Header from "./component/Header/Header";
+import LoginP from "./pages/LoginP";
+import HomeP from "./pages/HomeP";
+import React, { useState, useEffect } from "react";
 import axios from 'axios';
 
 function App() {
@@ -13,9 +17,14 @@ function App() {
   }, []);
 
   return (
-    <div>
-      백엔드에서 가져온 데이터는? : {hello}
-    </div>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<HomeP />} />
+        <Route path="/Login" element={<LoginP />} />
+      </Routes>
+      {/* <Footer /> */}
+    </BrowserRouter>
   );
 }
 
